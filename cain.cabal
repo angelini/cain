@@ -1,0 +1,28 @@
+name:               cain
+version:            0.1
+homepage:           http://alexangelini.com
+synopsis:           Static site generator
+description:
+    A simple static site generator which organizes Markdown posts
+    into a simple flat build directory and uploads it to S3 for 
+    cheap and scalable hosting
+category:           Utility
+license:            MIT
+license-file:       LICENSE
+author:             Alex Angelini
+maintainer:         alex.louis.angelini@gmail.com
+cabal-version:      >= 1.2
+build-type:         Simple
+
+Executable          cain
+    Main-Is:        Main.hs
+    Build-Depends:  base,
+                    filepath,
+                    directory,
+                    network,
+                    bytestring,
+                    MissingH,
+                    pandoc,
+                    rss,
+                    hastache,
+                    yaml
