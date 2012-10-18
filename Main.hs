@@ -17,7 +17,7 @@ main :: IO ()
 main = do
     args <- getArgs
 
-    case args of ["init"]     -> undefined
+    case args of ["init"]     -> initFolder
                  ["build"]    -> build
                  ["upload"]   -> undefined
                  _            -> putStrLn usage

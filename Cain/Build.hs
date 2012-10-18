@@ -21,6 +21,7 @@ import Text.Pandoc.Shared (defaultWriterOptions)
 import Text.RSS
 import qualified Network.URI as N
 
+
 parseConfig :: B.ByteString -> Either String Config
 parseConfig confFile = case decode confFile of
     Just config -> Right config

@@ -14,6 +14,7 @@ import Data.Yaml
 import Control.Applicative
 import Control.Monad
 
+
 data Date = Date { year  :: Integer
                  , month :: Integer
                  , day   :: Integer
